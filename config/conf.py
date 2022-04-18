@@ -23,6 +23,12 @@ _db_config_file = _config_path + os.sep + "db_conf.yml"
 _report_path = BASE_DIR + os.sep + "report"
 #print("报告路径是：%s"%_report_path)
 
+#定义conf_value.yml文件路径
+_conf_value_file = _config_path + os.sep + "conf_value.yml"
+
+def get_conf_value_file():
+    return _conf_value_file
+
 def get_report_path():
     return _report_path
 
@@ -47,6 +53,12 @@ class ConfigYml:
     def __init__(self):
         self.config = YamlReader(get_config_file()).data()
         self.db_config = YamlReader(get_db_config_file()).data()
+        self.conf_value = YamlReader(get_conf_value_file()).data()
+
+    #定义获取全局变量值信息
+    def get_conf_value_file(self):
+        return self.conf_value["signature"]
+
     #定义方法获取需要信息
     def get_config_url(self):
         return self.config["BASE"]["test"]["url"]

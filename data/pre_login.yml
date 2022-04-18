@@ -4,10 +4,50 @@
 "case_name": "登录成功"
 #url地址
 "url": "https://test-user-web-api.wanshifu.com/user/security/login"
-#data
+"url_enterprise": "https://test-enterprise-api.wanshifu.com/auth/login"
+"url_userapp": "https://test-user-app-api.wanshifu.com/user/security/login"
+"url_masterapp": "https://test-master-app-api.wanshifu.com/account/login"
+#data用户账号信息
 "data":
   principal: "13133333333"
   password: "123456"
   userType: "user"
   isRemember: "true"
   origin: "web"
+
+#总包账号信息
+"data_dataenterprise":
+  account: "keke"
+  pwd: "dGVzdEAxMjM0NTY="
+
+ #用户app登录信息
+"data_userapp":
+  principal: "13133333333"
+  password: "test@123456"
+  userType: "user"
+
+  #师傅app登录信息
+"data_masterapp":
+  "apkChannel": "default"
+  "phoneType": "android"
+  "device_id": "76fc4d50-44d8-4a02-abe2-f0f8538d5e34"
+  "phoneSystemVersion": "10"
+  "phoneBrandModel": "Redmi"
+  "signature": ""
+  "cityCode": ""
+  "loginCode": "72A1CE33684FA987A59FEB5CC61CC493"
+  "city_code": ""
+  "versionName": "6.7.0"
+  "deviceId": "76fc4d50-44d8-4a02-abe2-f0f8538d5e34"
+  "versionCode": "670"
+  "province_name": ""
+  "timeStamp": "1647395472173"
+  "jpushRegId": "120c83f760f0e492232"
+  "password": "72A1CE33684FA987A59FEB5CC61CC493"
+  "city_name": ""
+  "phoneModel": "Redmi K30"
+  "cityName": ""
+  "phone": "1873AF0777AEC70A82DBFF567D171D6A"
+  "loginWay": "password"
+  "regId": "76fc4d50-44d8-4a02-abe2-f0f8538d5e34"
+  "provinceName": ""
